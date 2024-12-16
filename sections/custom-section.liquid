@@ -1,8 +1,15 @@
-<h1>Hellow World</h1>
+<h1>{{ section.settings.text }}</h1>
 {% schema %}
     {
         "name": "Custom section",
-        "settings": [],
-        "presets": [{"name": "Default custom section"}]
+        "settings": [{
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }],
+        "presets": [{"name": "Default custom section"}],
+      "tag": "header",
+      "class": "custome-section",
+      "limit": 1
     }
 {% endschema %}
